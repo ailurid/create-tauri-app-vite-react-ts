@@ -1,7 +1,6 @@
 import { FunctionComponent, useState } from "react";
 import { Container, Stack } from "@mantine/core";
 
-import { File } from "../file/fileTypes";
 import { FileDropzone } from "../file/FileDropzone";
 import { FileList } from "../file/FileList";
 
