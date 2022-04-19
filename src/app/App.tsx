@@ -1,23 +1,16 @@
-import { useState } from "react";
+import { FunctionComponent } from "react";
+import { CounterButton } from "./CounterButton";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+export const App: FunctionComponent = () => {
   return (
     <div>
       <header>
         <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
+        <CounterButton />
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.
         </p>
       </header>
     </div>
   );
-}
-
-export default App;
+};
